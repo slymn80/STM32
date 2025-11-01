@@ -1,0 +1,16 @@
+﻿build/
+build*/
+Debug*/
+Release*/
+.vscode/
+.idea/
+.settings/
+*.o
+*.d
+*.su
+*.a
+*.elf
+*.hex
+*.bin
+*.map
+compile_commands.json
