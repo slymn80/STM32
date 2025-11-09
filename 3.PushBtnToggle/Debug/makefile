@@ -60,8 +60,8 @@ all: main-build
 main-build: 3.PushBtnToggle.elf secondary-outputs
 
 # Tool invocations
-3.PushBtnToggle.elf 3.PushBtnToggle.map: $(OBJS) $(USER_OBJS) C:\Users\Suleyman\Desktop\STM32\ training\3.PushBtnToggle\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "3.PushBtnToggle.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Suleyman\Desktop\STM32 training\3.PushBtnToggle\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="3.PushBtnToggle.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+3.PushBtnToggle.elf 3.PushBtnToggle.map: $(OBJS) $(USER_OBJS) C:\Users\Suleyman\git\STM32\3.PushBtnToggle\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "3.PushBtnToggle.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Suleyman\git\STM32\3.PushBtnToggle\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="3.PushBtnToggle.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
